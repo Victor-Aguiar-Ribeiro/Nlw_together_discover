@@ -1,2 +1,25 @@
-﻿
+﻿* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  border-style: border-box;
+}
 
+html {
+
+  /* Setting API colors */
+  --black: #0D114F;
+  --white: #FAFAFA;
+  --red: #E83F5B;
+  --lightblue: #E0ECFF;
+  --blue: #3485FF;
+  --bgColor: #FBFCFF;
+  --overlay: #040911;
+  --iconsDetailsColor: #A5B0C1;
+  --grey-black: #4D5E77;
+  --grey-blue: #A1B2CD;
+  --grey-medium: #D3D9E2;
+  --grey-light: #E5EAF1;
+
+}
