@@ -1,0 +1,11 @@
+﻿.contentWrapper{
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 11.4rem 1fr;
+}
+
+
+.header > svg{
+  margin: 1.2rem auto;
+
+}
