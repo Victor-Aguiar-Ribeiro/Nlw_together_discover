@@ -14,7 +14,7 @@ html {
   --red: #E83F5B;
   --lightblue: #E0ECFF;
   --blue: #3485FF;
-  --bgColor: #FBFCFF;
+  --background: #FBFCFF;
   --overlay: #040911;
   --iconsDetailsColor: #A5B0C1;
   --grey-black: #4D5E77;
@@ -22,4 +22,20 @@ html {
   --grey-medium: #D3D9E2;
   --grey-light: #E5EAF1;
 
+  /* Setting default font-size to match 10px */
+  font-size: 62.5%;
+}
+
+h2 {
+  font-size: 2.8rem;
+  background: var(--background);
+}
+
+body, button, input, textarea, .btn {
+  font-size: clamp(14px, 1.6rem, 2vw);
+  font-family: 'Open Sans', sans-serif;
+}
+
+.title{
+  font-family: 'Poppins', sans-serif;
 }
