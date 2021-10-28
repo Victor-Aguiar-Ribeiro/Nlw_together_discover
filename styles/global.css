@@ -26,16 +26,96 @@ html {
   font-size: 62.5%;
 }
 
-h2 {
-  font-size: 2.8rem;
-  background: var(--background);
-}
-
 body, button, input, textarea, .btn {
   font-size: clamp(14px, 1.6rem, 2vw);
   font-family: 'Open Sans', sans-serif;
 }
 
+.sr-only {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 .title{
   font-family: 'Poppins', sans-serif;
+  color: var(--black);
+  margin-bottom: 2.4rem;
+  font-size: clamp(20px, 5vw, 2.8rem);
+  background-color: transparent;
+  width: 36.3rem;
+  
+}
+
+.header object {
+  width: 16.7rem;
+  height: 4.383rem;
+}
+
+.separator {
+  display: inline-block;
+  margin: 4rem auto;
+}
+
+/* Inputs & Buttons */
+
+input, button, .btn {
+  border-radius: .8rem;
+  height: 5rem;
+}
+
+.normal-input {
+  border: .2rem solid var(--grey-blue);
+  padding: 0 1.2rem;
+  width: 33.9rem;
+  margin-bottom: 1.8rem;
+}
+
+button, .btn {
+  font-family: 'Poppins';
+  font-weight: 500;
+  line-height: 0;
+  width: 36.3rem;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: filter .2s;
+
+  cursor: pointer;
+}
+
+button:hover, .btn:hover{
+  filter: brightness(1.2);
+}
+
+.--btn-blue{
+  background: var(--blue);
+  color: var(--white);
+}
+.--btn-red{
+  background: var(--red);
+  color: var(--white);
+}
+.--btn-grey{
+  background: var(--grey-light);
+  color: var(--grey-black);
+}
+.--btn-border-blue{
+  background: var(--white);
+  color: var(--blue);
+
+  border: .2rem solid var(--blue);
+}
+
+.btn object{
+  width: 2rem;
+  margin-right: 1rem;
 }

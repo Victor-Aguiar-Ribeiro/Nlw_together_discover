@@ -1,1 +1,38 @@
-﻿
+﻿.contentWrapper {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 11.4rem 1fr;
+
+  grid-template-areas: 
+  'header header'
+  'left right'
+}
+
+.contentWrapper .header{
+  grid-area: header;
+
+  width: 80%;
+  margin: 3.5rem auto;
+}
+
+.bgImage {
+  grid-area: left;
+}
+
+main {
+  grid-area: right;
+
+  display: flex;
+  align-items: center;
+  justify-items: center;
+
+}
+
+main .container{
+  width: min(36.3rem 100%);
+}
+
+p {
+  color: var(--grey-blue);
+}
+

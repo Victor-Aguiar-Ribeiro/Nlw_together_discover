@@ -23,31 +23,31 @@
       <object data="assets/logo.svg" type="image/svg+xml" alt="Logo do Rocket.q"></object>
         <div class="bg-elipse"></div>
     </header>
+
+    <object class="bgImage" data="/assets/bg-img.svg" type="image/svg+xml" alt="Ilustração - Rapaz flutuando com card de perguntas roxo nas mãos"></object>
   
     <main> 
-      <object data="/assets/bg-img.svg" type="image/svg+xml" alt="Ilustração - Rapaz flutuando com card de perguntas roxo nas mãos"></object>
       <div class="container">
-  
         <section>
           <h2 class="title">Entre como participante</h2>
-          <form>
+          <form class="form">
             <label class="sr-only" for="room-code">Código da Sala</label>
-            <input type="number" id="room-code" placeholder="Código da Sala">
-            <button class="btn btn-primary">
+            <input class="normal-input" type="text" id="room-code" placeholder="Código da Sala">
+            <button class="btn btn-primary --btn-blue">
               <object data="assets/login-icon.svg" type="image/svg+xml" alt="Icone do botão de login"></object>
               Entrar na Sala</button>
           </form>  
         </section>
   
         <div class="separator">
-          <div></div>
-          <div>ou</div>
-          <div></div>
+          <div class="separator-line"></div>
+          <p class="default-text">ou</p>
+          <div class="separator-line"></div>
         </div>
   
         <section>
           <h2 class="title">Crie sua própria sala de forma fácil</h2>
-          <a href="new-room.html">
+          <a class="btn --btn-border-blue" href="new-room.html">
             <!-- SVG declaration also supported by IE -->
             <object data="assets/create-room-icon.svg" type="image/svg+xml" alt="Icone do botão de criar nova sala"></object>
             Criar Sala
