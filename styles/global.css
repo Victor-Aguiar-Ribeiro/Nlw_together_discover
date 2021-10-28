@@ -49,7 +49,6 @@ body, button, input, textarea, .btn {
   margin-bottom: 2.4rem;
   font-size: clamp(20px, 5vw, 2.8rem);
   background-color: transparent;
-  width: 36.3rem;
   
 }
 
@@ -73,7 +72,8 @@ input, button, .btn {
 .normal-input {
   border: .2rem solid var(--grey-blue);
   padding: 0 1.2rem;
-  width: 33.9rem;
+  width: 92%;
+
   margin-bottom: 1.8rem;
 }
 
@@ -81,7 +81,7 @@ button, .btn {
   font-family: 'Poppins';
   font-weight: 500;
   line-height: 0;
-  width: 36.3rem;
+  width: 100%;
   
   display: flex;
   align-items: center;
