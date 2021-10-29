@@ -26,6 +26,12 @@ html {
   font-size: 62.5%;
 }
 
+body{
+  display: flex;
+  height: 100vh;
+  background: var(--background);
+}
+
 body, button, input, textarea, .btn {
   font-size: clamp(14px, 1.6rem, 2vw);
   font-family: 'Open Sans', sans-serif;
@@ -55,11 +61,6 @@ body, button, input, textarea, .btn {
 .header object {
   width: 16.7rem;
   height: 4.383rem;
-}
-
-.separator {
-  display: inline-block;
-  margin: 4rem auto;
 }
 
 /* Inputs & Buttons */
