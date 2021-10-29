@@ -1,0 +1,36 @@
+﻿.contentWrapper {
+  width: -webkit-fill-available;
+}
+
+.header {
+  width: auto;
+  padding: 3.2rem 16rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .buttons {
+  display: flex;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: clamp(14px, 1.6rem, 2vw);
+}
+
+.header .buttons .--btn-blue{
+  padding: 0 1.6rem;
+  line-height: 2.4rem;
+}
+
+.header .buttons .--btn-border-blue{
+  padding: 1.3rem 1.6rem;
+  line-height: 2.4rem;
+  margin-right: .8rem;
+}
+
+.header .buttons .--btn-border-blue > object{
+  margin-left: 1rem;
+  margin-right: 0;
+}
+
