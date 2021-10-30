@@ -70,8 +70,9 @@
         <!-- Question -->
         <div class="question-content">
           <span class="user">
-            <div class="user-circle"></div>
-            <object data="assets/user-icon.svg" type="image/svg+xml" alt="Avatar do usuário"></object>
+            <div class="user-circle">
+              <object data="assets/user-icon.svg" type="image/svg+xml" alt="Avatar do usuário"></object>
+            </div>
           </span>
           <p class="question-text">Aqui é onde se fazem as perguntas?</p>
         </div>
@@ -93,8 +94,9 @@
         <!-- Question -->
         <div class="question-content">
           <span class="user">
-            <div class="user-circle"></div>
-            <object data="assets/user-icon.svg" type="image/svg+xml" alt="Avatar do usuário"></object>
+            <div class="user-circle">
+              <object data="assets/user-icon.svg" type="image/svg+xml" alt="Avatar do usuário"></object>
+            </div>
           </span>
           <p class="question-text">Aqui é onde se fazem as perguntas?</p>
         </div>
@@ -111,15 +113,16 @@
           </a>
         </div>
       </div>
-      
+
       <!-- || Question | Read  -->
 
       <div class="question-wrapper read">
         <!-- Question -->
         <div class="question-content">
           <span class="user">
-            <div class="user-circle"></div>
-            <object data="assets/user-icon.svg" type="image/svg+xml" alt="Avatar do usuário"></object>
+            <div class="user-circle">
+              <object data="assets/user-icon.svg" type="image/svg+xml" alt="Avatar do usuário"></object>
+            </div>
           </span>
           <p class="question-text">Aqui é onde se fazem as perguntas?</p>
         </div>
@@ -132,7 +135,24 @@
           </a>
         </div>
       </div>
+      </section>
 
+      <!-- --------- MODAL Section -----------  -->
+
+      <section id="modal">
+        <div class="modal">
+          <h2 class="title">Excluir pergunta</h2>
+          <p>Tem certeza que você deseja excluir esta pergunta?</p>
+          <form class="modal-form" action="">
+            <label class="sr-only" for="password">Insira sua senha</label>
+            <input class="input" type="password" id="password" name="password"/>
+
+            <span class="buttons">
+              <button class="btn --btn-grey">Cancelar</button>
+              <button class="btn --btn-red">Sim, excluir</button>
+            </span>
+          </form>
+        </div>
       </section>
     </div>
   </body>
