@@ -201,6 +201,9 @@
 
 #modal .modal > p {
   color: var(--grey-black);
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
 }
 
 #modal .modal .modal-form {
@@ -225,11 +228,14 @@
   justify-content: space-between;
 
   width: 100%;
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
 }
 
 #modal .modal .modal-form .buttons button:nth-child(1) {
+  color: var(--grey-black);
   margin-right: .8rem;
-
-  width: min(13.9rem, 100%);
+  width: 80%;
 }
 
