@@ -138,6 +138,16 @@
   line-height: 2.2rem;
 }
 
+/* Question | Read */
+#questions .question-wrapper.read {
+  background-color: #eaecf1;
+}
+
+#questions .question-wrapper.read .question-content .user .user-circle {
+  background-color: var(--grey-blue);
+
+}
+
 /* Actions */
 
 #questions .question-wrapper .actions {
