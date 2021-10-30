@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="pt-br">
-<head>
+  <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,11 +15,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-</head>
+  </head>
 
-<body>
-  <div class="contentWrapper">
-    <header id="header">
+  <body>
+    <div class="contentWrapper">
+
+      <!-- --------- Header Section -----------  -->
+
+      <header id="header">
       <a href="#">
         <object data="assets/logo.svg" type="image/svg+xml" alt="Logo do Rocket.q"></object>
       </a>
@@ -36,9 +39,11 @@
         </a>
   
       </div>
-    </header>
+      </header>
 
-    <section id="question-form">
+      <!-- --------- Q&A Section -----------  -->
+
+      <section id="question-form">
       <h2 class="title">Faça sua pergunta</h2>
 
       <form action="" class="form-outlined">
@@ -53,17 +58,84 @@
           <button class="btn --btn-blue">Enviar</button>
         </footer>
       </form>
-    </section>
+      </section>
 
-    <section >
-      <!-- Título invisível | Acessibilidade -->
+      <!-- --------- Questions Section -----------  -->
+
+      <section id="questions">
+      <!-- Invisible title | Accessibility -->
       <h2 class="sr-only">Perguntas da Comunidade</h2>
 
+      <div class="question-wrapper">
+        <!-- Question -->
+        <div class="question-content">
+          <span class="user">
+            <div class="user-circle"></div>
+            <object data="assets/user-icon.svg" type="image/svg+xml"></object>
+          </span>
+          <p class="question-text">Aqui é onde se fazem as perguntas?</p>
+        </div>
+        
+        <!-- Actions -->
+        <div class="actions">
+          <a href="" class="check --align">
+            <object data="assets/check-icon.svg" type="image/svg+xml"></object>
+            Marcar como lida
+          </a>
+          <a href="" class="trash --align">
+            <object data="assets/trash-icon.svg" type="image/svg+xml"></object>
+            Excluir
+          </a>
+        </div>
+      </div>
 
+      <div class="question-wrapper">
+        <!-- Question -->
+        <div class="question-content">
+          <span class="user">
+            <div class="user-circle"></div>
+            <object data="assets/user-icon.svg" type="image/svg+xml"></object>
+          </span>
+          <p class="question-text">Aqui é onde se fazem as perguntas?</p>
+        </div>
+        
+        <!-- Actions -->
+        <div class="actions">
+          <a href="" class="check --align">
+            <object data="assets/check-icon.svg" type="image/svg+xml"></object>
+            Marcar como lida
+          </a>
+          <a href="" class="trash --align">
+            <object data="assets/trash-icon.svg" type="image/svg+xml"></object>
+            Excluir
+          </a>
+        </div>
+      </div>
 
-    </section>
+      <div class="question-wrapper">
+        <!-- Question -->
+        <div class="question-content">
+          <span class="user">
+            <div class="user-circle"></div>
+            <object data="assets/user-icon.svg" type="image/svg+xml"></object>
+          </span>
+          <p class="question-text">Aqui é onde se fazem as perguntas?</p>
+        </div>
+        
+        <!-- Actions -->
+        <div class="actions">
+          <a href="" class="check --align">
+            <object data="assets/check-icon.svg" type="image/svg+xml"></object>
+            Marcar como lida
+          </a>
+          <a href="" class="trash --align">
+            <object data="assets/trash-icon.svg" type="image/svg+xml"></object>
+            Excluir
+          </a>
+        </div>
+      </div>
 
-  </div>
-</body>
-
+      </section>
+    </div>
+  </body>
 </html>

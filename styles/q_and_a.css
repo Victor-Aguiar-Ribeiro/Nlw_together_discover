@@ -3,7 +3,7 @@
   justify-self: center;
 }
 
-/* --------------------- Header ------------------------ */
+/* --------------------- Header Section ------------------------ */
 
 #header {
   width: auto;
@@ -13,6 +13,7 @@
   align-items: center;
   justify-content: space-between;
 }
+
 #header .buttons {
   display: flex;
   align-items: center;
@@ -41,11 +42,14 @@
 /* ----------------------- Q&A Section ------------------------- */
 
 #question-form .form-outlined {
+  display: grid;
+
   border: .2rem solid var(--grey-blue);
   border-radius: 0 .8rem .8rem .8rem;
 
   padding: 1.2rem 1.6rem 1.6rem 1.6rem;
-  
+  margin-bottom: 1.6rem;
+  height: 10.6rem;
 }
 
 #question-form .form-outlined textarea {
@@ -64,12 +68,18 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  align-self: flex-end;
 }
 
 #question-form .form-outlined .form-footer > div {
   display: flex;
   align-items: center;
   color: var(--iconsDetailsColor)
+}
+
+#question-form .form-outlined .form-footer > div object{
+  margin-right: .6rem;
 }
 
 /* Estilo do botão menor */
@@ -79,5 +89,79 @@
   padding: 0 2.4rem;
 }
 
-/* ----------------------- Questions ------------------------- */
+/* ----------------------- Questions Section ------------------------- */
+
+#questions {
+  height: 100vh;
+}
+
+#questions .question-wrapper {
+  display: grid;
+
+  padding: 2.4rem;
+  margin-bottom: .8rem;
+  height: min(11.2rem, 22.4rem);
+  
+  border-radius: 0 .8rem .8rem .8rem;
+
+  background-color: var(--lightblue);
+}
+
+#questions .question-wrapper .question-content {
+  display: flex;
+  align-items: center;
+}
+
+/* User Avatar */
+#questions .question-wrapper .question-content .user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-right: 1.6rem;
+}
+
+#questions .question-wrapper .question-content .user .user-circle {
+  clip-path: circle();
+  background-color: var(--blue);
+  height: 5.2rem;
+  width: 5.2rem; 
+}
+
+#questions .question-wrapper .question-content .user object {
+  position: absolute;
+}
+
+#questions .question-wrapper .question-content .question-text {
+  color: var(--black);
+  
+  line-height: 2.2rem;
+}
+
+/* Actions */
+
+#questions .question-wrapper .actions {
+  align-self: flex-end;
+  justify-self: flex-end;
+}
+
+#questions .question-wrapper .actions .check {
+  margin-right: 2.4rem;
+}
+
+#questions .question-wrapper .actions .--align {
+  display: inline-flex;
+  align-items: center;
+}
+
+#questions .question-wrapper .actions .--align object {
+  margin-right: .8rem;
+}
+
+
+
+
+
+
+
 
