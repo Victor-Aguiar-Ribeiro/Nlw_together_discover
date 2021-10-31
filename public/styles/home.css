@@ -64,6 +64,7 @@ main {
 
 main .container{
   width: min(36.3rem, 100%);
+  text-align: center;
 }
 
 main .container .form .normal-input {

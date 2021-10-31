@@ -6,7 +6,7 @@
   "author": "Victor-Aguiar-Ribeiro <victor_a.ribeiro@outlook.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon src/server.js"
+    "dev": "nodemon ."
   },
   "dependencies": {
     "ejs": "^3.1.6",
