@@ -45,7 +45,7 @@
 .bgImage {
   grid-area: left;
 
-  background-image: url('/assets/bg-img.svg');
+  background-image: url('/images/bg-img.svg');
   background-position-x: -12rem;
   background-size: contain;
   background-repeat: no-repeat;

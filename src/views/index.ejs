@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Rocket.q | Home</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./styles/global.css">
+  <link rel="stylesheet" href="./styles/home.css">
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="contentWrapper">
+    <header class="header">
+      <object data="images/logo.svg" type="image/svg+xml" alt="Logo do Rocket.q"></object>
+        <div class="bg-elipse"></div>
+    </header>
+
+    <div class="bgShapes">
+      <div></div>
+      <div></div>
+    </div>
+
+    <div class="bgImage" type="image/svg+xml" alt="Ilustração"></div>
+
+    <main> 
+      <div class="container">
+        <section>
+          <h2 class="title">Entre como participante</h2>
+          <form class="form">
+            <label class="sr-only" for="room-code">Código da Sala</label>
+            <input class="normal-input" type="number  " id="room-code" placeholder="Código da Sala">
+            <button class="btn btn-primary --btn-blue">
+              <object data="images/login-icon.svg" type="image/svg+xml" alt="Icone do botão de login"></object>
+              Entrar na Sala
+            </button>
+          </form>  
+        </section>
+  
+        <div class="separator">
+          <div class="separator-line"></div>
+          <p>ou</p>
+          <div class="separator-line"></div>
+        </div>
+  
+        <section>
+          <h2 class="title">Crie sua própria sala de forma fácil</h2>
+          <a class="btn --btn-border-blue" href="new-room.html">
+            <!-- SVG declaration also supported by IE -->
+            <object data="images/create-room-icon.svg" type="image/svg+xml" alt="Icone do botão de criar nova sala"></object>
+            Criar Sala
+          </a>
+        </section>
+  
+      </div>
+    </main>
+  </div>
+</body>
+</html>
