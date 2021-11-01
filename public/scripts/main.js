@@ -28,7 +28,9 @@ function handleClick( event, check = true ) {
 
   modalTitle.innerHTML = `${text} a pergunta`
   modalParagraph.innerHTML = `Tem certeza que você deseja ${text.toLowerCase()} esta pergunta?`
-  modalButton.innerHTML = check ? 'Sim, tenho' : 'Sim, excluir'
+  modalButton.innerHTML = `Sim, ${text.toLowerCase()}`
+
+  check ? ( modalButton.classList.remove('--btn-red'), modalButton.classList.add('--btn-blue') ) : ( modalButton.classList.remove('--btn-blue') && modalButton.classList.add('--btn-red') )
 
   // Abrir modal
   modal.open( event );
