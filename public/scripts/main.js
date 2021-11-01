@@ -34,7 +34,7 @@ function handleClick( event, check = true ) {
 
   const modalForm = document.querySelector( '.modal .modal-form' )
 
-  modalForm.setAttribute( 'action', `/q_and_a/${ roomId }/${ questionId }/${ action }`)
+  modalForm.setAttribute( 'action', `/question/${ roomId }/${ questionId }/${ action }`)
 
   modalTitle.innerHTML = `${text} a pergunta`
   modalParagraph.innerHTML = `Tem certeza que você deseja ${text.toLowerCase()} esta pergunta?`
