@@ -30,7 +30,7 @@
         <object data="images/logo.svg" type="image/svg+xml" alt="Logo do Rocket.q"></object>
       </a>
       
-      <div class="buttons">
+      <div class="buttons" id="roomId" data-id="323243">
         <button class="btn --btn-border-blue" type="button" alt="Copiar código da sala">
           #323243
           <object data="images/copy-icon.svg" type="image/svg+xml"></object>
@@ -82,11 +82,11 @@
         
         <!-- Actions -->
         <div class="actions">
-          <a href='' class="check --align" type="button" onclick="return false">
+          <a href="" class="check --align" type="button" data-id="2" onclick="return false">
             <object data="images/check-icon.svg" type="image/svg+xml" alt="Marcar como lida"></object>
             Marcar como lida
           </a>
-          <a href="" class="trash --align" type="button" onclick="return false">
+          <a href="" class="trash --align" type="button" data-id="2" onclick="return false">
             <object data="images/trash-icon.svg" type="image/svg+xml" alt="Excluir"></object>
             Excluir
           </a>
@@ -106,11 +106,11 @@
         
         <!-- Actions -->
         <div class="actions">
-          <a href="" class="check --align" type="button" onclick="return false">
+          <a href="" class="check --align" type="button" data-id="3" onclick="return false">
             <object data="images/check-icon.svg" type="image/svg+xml" alt="Marcar como lida"></object>
             Marcar como lida
           </a>
-          <a href="" class="trash --align" type="button" onclick="return false">
+          <a href="" class="trash --align" type="button" data-id="3" onclick="return false">
             <object data="images/trash-icon.svg" type="image/svg+xml" alt="Excluir"></object>
             Excluir
           </a>
@@ -132,7 +132,7 @@
         
         <!-- Actions -->
         <div class="actions">
-          <a href="" class="check --align" type="button" onclick="return false">
+          <a href="" class="check --align" type="button" data-id="1" onclick="return false">
             <object data="images/check-icon.svg" type="image/svg+xml" alt="Pergunta lida"></object>
             Pergunta lida
           </a>
@@ -146,13 +146,13 @@
         <div class="modal">
           <h2 class="title">Excluir pergunta</h2>
           <p>Tem certeza que você deseja excluir esta pergunta?</p>
-          <form class="modal-form" action="">
+          <form class="modal-form" action="" method="post">
             <label class="sr-only" for="password">Digite sua senha</label>
             <input class="input" type="password" id="password" name="password" placeholder="Digite sua senha"/>
 
             <span class="buttons">
               <button class="btn --btn-grey cancel" onclick="return false">Cancelar</button>
-              <button class="btn --btn-red">Sim, excluir</button>
+              <button class="btn --btn-red submit">Sim, excluir</button>
             </span>
           </form>
         </div>
