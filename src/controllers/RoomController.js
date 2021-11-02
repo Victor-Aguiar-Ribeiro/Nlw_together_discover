@@ -38,9 +38,21 @@ module.exports = {
     res.redirect( `/room/${ parseInt(roomId) }` )
   },
 
-  open( req, res ){
-    const roomId = req.params.room
+  async open( req, res ){
+    const db = await Database()
 
-    res.render( "q_and_a", { roomId: roomId } )
+    const roomId = req.params.room
+    const id = await db.get( `SELECT id FROM questions` )
+    const questions = await db.all( `SELECT * FROM questions WHERE roomId = ${ roomId } and isChecked = 0` )
+    const questionsChecked = await db.all( `SELECT * FROM questions WHERE roomId = ${ roomId } and isChecked = 1` )
+
+    res.render( "q_and_a", { 
+      roomId: roomId,
+      questions: questions,
+      questionsChecked: questionsChecked,
+      id: id
+    } )
+
+    await db.close()
   }
 }

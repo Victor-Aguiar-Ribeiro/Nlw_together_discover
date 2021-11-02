@@ -69,51 +69,55 @@
       <!-- Invisible title | Accessibility -->
       <h2 class="sr-only">Perguntas da Comunidade</h2>
 
-      <div class="question-wrapper">
-        <!-- Question -->
-        <div class="question-content">
-          <span class="user">
-            <div class="user-circle">
-              <object data="/images/user-icon.svg" type="image/svg+xml" alt="Avatar do usuário"></object>
-            </div>
-          </span>
-          <p class="question-text">Aqui é onde se fazem as perguntas?</p>
+      <!-- Laço foreach que mostra as questions presentes no DB -->
+      <% questions.forEach(question => { %>
+        <div class="question-wrapper">
+          <!-- Question -->
+          <div class="question-content">
+            <span class="user">
+              <div class="user-circle">
+                <object data="/images/user-icon.svg" type="image/svg+xml" alt="Avatar do usuário"></object>
+              </div>
+            </span>
+            <p class="question-text"><%= question.question %></p>
+          </div>
+          
+          <!-- Actions -->
+          <div class="actions">
+            <a href="" class="check --align" type="button" data-id="<%= question.id %> " onclick="return false">
+              <object data="/images/check-icon.svg" type="image/svg+xml" alt="Marcar como lida"></object>
+              Marcar como lida
+            </a>
+            <a href="" class="trash --align" type="button" data-id="<%= question.id %> " onclick="return false">
+              <object data="/images/trash-icon.svg" type="image/svg+xml" alt="Excluir"></object>
+              Excluir
+            </a>
+          </div>
         </div>
-        
-        <!-- Actions -->
-        <div class="actions">
-          <a href="" class="check --align" type="button" data-id="2" onclick="return false">
-            <object data="/images/check-icon.svg" type="image/svg+xml" alt="Marcar como lida"></object>
-            Marcar como lida
-          </a>
-          <a href="" class="trash --align" type="button" data-id="2" onclick="return false">
-            <object data="/images/trash-icon.svg" type="image/svg+xml" alt="Excluir"></object>
-            Excluir
-          </a>
-        </div>
-      </div>
+      <% }) %>    
 
-      <!-- || Question | Read  -->
-
-      <div class="question-wrapper read">
-        <!-- Question -->
-        <div class="question-content">
-          <span class="user">
-            <div class="user-circle">
-              <object data="/images/user-icon.svg" type="image/svg+xml" alt="Avatar do usuário"></object>
-            </div>
-          </span>
-          <p class="question-text">Aqui é onde se fazem as perguntas?</p>
+      <% questionsChecked.forEach(questionChecked => { %>
+        <!-- || Question | Read  -->
+        <div class="question-wrapper read">
+          <!-- Question -->
+          <div class="question-content">
+            <span class="user">
+              <div class="user-circle">
+                <object data="/images/user-icon.svg" type="image/svg+xml" alt="Avatar do usuário"></object>
+              </div>
+            </span>
+            <p class="question-text"><%= questionChecked.question %> ></p>
+          </div>
+          
+          <!-- Actions -->
+          <div class="actions">
+            <a href="" class="check --align" type="button" data-id="<%= questionChecked.id %> " onclick="return false">
+              <object data="/images/check-icon.svg" type="image/svg+xml" alt="Pergunta lida"></object>
+              Pergunta lida
+            </a>
+          </div>
         </div>
-        
-        <!-- Actions -->
-        <div class="actions">
-          <a href="" class="check --align" type="button" data-id="1" onclick="return false">
-            <object data="/images/check-icon.svg" type="image/svg+xml" alt="Pergunta lida"></object>
-            Pergunta lida
-          </a>
-        </div>
-      </div>
+        <% }) %>
       </section>
 
       <!-- ---------------------------- MODAL Section ------------------------------  -->

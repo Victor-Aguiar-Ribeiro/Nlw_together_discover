@@ -15,6 +15,20 @@ module.exports = {
     const db = await Database()
 
     const text = req.body.question
-    
+    const roomId = req.params.room
+
+    await db.run( `INSERT INTO questions (
+      question,
+      isChecked,
+      roomId
+    ) VALUES (
+      "${ text }",
+      0,
+      ${ roomId }
+    )` )
+
+    res.redirect( `/room/${ roomId }` )
+
+    await db.close()
   }
 }
