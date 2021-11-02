@@ -1,6 +1,7 @@
 ﻿const Database = require('../db/config')
 
 module.exports = {
+  // Criar nova sala
   async createRoom( req, res ){
     const db = await Database()
     const password = req.body.password
@@ -31,9 +32,16 @@ module.exports = {
         
       }
     }
-
+    // Espera fechamento do DB
     await db.close()
 
+    // Redireciona para a sala, passando tambem o roomId na URL -> routes.ts
     res.redirect( `/room/${ parseInt(roomId) }` )
+  },
+
+  open( req, res ){
+    const roomId = req.params.room
+
+    res.render( "q_and_a", { roomId: roomId } )
   }
 }

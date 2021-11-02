@@ -7,7 +7,7 @@ const router = express.Router()
 router.get('/', (req, res) => {res.render( 'index', { page: 'enter-room' } )})
 router.get('/new-room', (req, res) => {res.render( 'index', { page: 'new-room' } )})
 
-router.get('/room/:room', (req, res) => {res.render('q_and_a')})
+router.get('/room/:room', roomController.open)
 
 // Formato que o form de dentro da modal tem que passar as informações
 router.post( '/question/:room/:question/:action',  questionController.index)
