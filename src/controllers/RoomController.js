@@ -29,7 +29,6 @@ module.exports = {
           ${ parseInt( roomId ) },
           ${ password }
         )`)
-        
       }
     }
     // Espera fechamento do DB

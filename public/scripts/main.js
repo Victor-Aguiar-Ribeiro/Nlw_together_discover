@@ -47,5 +47,27 @@ function handleClick( event, check = true ) {
   modal.open( event );
 }
 
+//*********** Adicionar ação copiar ao clicar no copy button da room ************
+const copyButton = document.querySelector( '#roomId .--btn-border-blue')
+
+copyButton.addEventListener('click', () => {
+
+  const str = copyButton.textContent.split('#')[1]
+  // Criar elemento text area
+  let textArea = document.createElement( 'textarea' )
+  // Setar a string a ser copiada na text area
+  textArea.value = str.split( ' \n' )[0]
+  // Setar como nao editavel e mover para fora do campo de visao para evitar erros
+  textArea.classList.add('sr-only')
+  document.body.appendChild( textArea )
+  // Selecionar texto na text area
+  textArea.select()
+  textArea.setSelectionRange( 0, 999999) /* para dispositivos mobile */
+  // Copiar para clipboard 
+  console.log(textArea.value)
+  navigator.clipboard.writeText( textArea.value )
+  // Remove o elemento text area
+  document.body.removeChild(textArea)
+})
 
 
