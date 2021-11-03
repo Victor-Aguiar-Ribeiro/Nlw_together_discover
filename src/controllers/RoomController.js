@@ -54,5 +54,18 @@ module.exports = {
     } )
 
     await db.close()
+  },
+
+  async enterRoom ( req, res ){
+    const db = await Database()
+
+    const roomId = req.body.roomId
+    const existId = await db.get( `SELECT id FROM rooms WHERE id = ${ roomId }` )
+
+    // console.log( `existId: ${ existId } | roomId: ${ roomId }` )
+
+    existId ? res.redirect( `/room/${ roomId }`) : res.redirect( '/' )
+
+    await db.close()
   }
 }

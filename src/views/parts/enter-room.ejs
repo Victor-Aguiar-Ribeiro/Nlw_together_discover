@@ -1,8 +1,8 @@
 ﻿<section>
   <h2 class="title">Entre como participante</h2>
-  <form class="form">
-    <label class="sr-only" for="room-code">Código da Sala</label>
-    <input class="normal-input" type="number  " id="room-code" placeholder="Código da Sala">
+  <form action="/enter-room" method="post" class="form">
+    <label class="sr-only" for="room-id">Código da Sala</label>
+    <input class="normal-input" name="roomId" type="number" id="room-id" placeholder="Código da Sala">
     <button class="btn btn-primary --btn-blue">
       <object data="/images/login-icon.svg" type="image/svg+xml" alt="Icone do botão de login"></object>
       Entrar na Sala

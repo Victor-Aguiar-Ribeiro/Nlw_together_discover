@@ -20,8 +20,12 @@ module.exports = {
       }else if( action === 'check' ) {
         await db.run( `UPDATE questions SET isChecked = 1 WHERE id = ${questionId}` )
       }
+      res.redirect( `/room/${roomId}` )
+    }else {
+      console.log( `Error - invalid password`)
+      
+      res.redirect( `/room/${ roomId }` )
     }
-    res.redirect( `/room/${roomId}` )
 
     await db.close()
   },
