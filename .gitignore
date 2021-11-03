@@ -1,2 +1,4 @@
 ﻿# IGNORE LOCAL VS-CODE SETTINGS
 /.vscode
+# IGNORE LOCAL DB FILE ------ RUN ``` yarn init-db ``` to generate DB tables
+./src/db/rocketq.sqlite

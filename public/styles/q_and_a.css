@@ -257,3 +257,38 @@
   width: auto;
 }
 
+/* ----------------------- NoQuestionWrapper Section ------------------------- */
+
+#noQuestionWrapper {
+  margin: auto;
+  height: auto;
+  
+  text-align: center;
+  
+}
+
+#noQuestionWrapper object {  
+  margin-top: 5.2rem;
+}
+
+#noQuestionWrapper p {
+  color: var(--black);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+
+  line-height: 2.7rem;
+
+  margin-top: 1.2rem;
+}
+
+#noQuestionWrapper p + p {
+  color: var(--grey-black);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+
+  line-height: 1.9rem;
+
+  margin-top: 1.3rem;
+}

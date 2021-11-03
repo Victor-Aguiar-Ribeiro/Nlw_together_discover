@@ -69,8 +69,11 @@
       <!-- Invisible title | Accessibility -->
       <h2 class="sr-only">Perguntas da Comunidade</h2>
 
+      <% if ( !isQuestions ) { %>
+        <%- include ( `parts/no-questions` ) %> 
+      <% } %>
       <!-- Laço foreach que mostra as questions presentes no DB -->
-      <% questions.forEach(question => { %>
+      <% questions.forEach ( question => { %>
         <div class="question-wrapper">
           <!-- Question -->
           <div class="question-content">
@@ -96,7 +99,7 @@
         </div>
       <% }) %>    
 
-      <% questionsChecked.forEach(questionChecked => { %>
+      <% questionsChecked.forEach ( questionChecked => { %>
         <!-- || Question | Read  -->
         <div class="question-wrapper read">
           <!-- Question -->

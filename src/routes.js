@@ -7,7 +7,7 @@ const router = express.Router()
 router.get('/', (req, res) => {res.render( 'index', { page: 'enter-room' } )})
 router.get('/new-room', (req, res) => {res.render( 'index', { page: 'new-room' } )})
 
-router.get('/room/:room', roomController.open)
+router.get('/room/:room', roomController.openRoom)
 router.post( `/create-room`, roomController.createRoom )
 router.post( `/enter-room`, roomController.enterRoom )
 
