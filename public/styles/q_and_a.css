@@ -25,6 +25,8 @@
 #header .buttons .--btn-blue{
   padding: 0 1.6rem;
   line-height: 2.4rem;
+
+  white-space: nowrap;
 }
 
 #header .buttons .--btn-border-blue{

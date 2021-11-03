@@ -49,7 +49,7 @@
       <section id="question-form">
       <h2 class="title">Faça sua pergunta</h2>
 
-      <form action="/question/create-question/<%= roomId %> " method="post" class="form-outlined">
+      <form action="/question/create-question/<%= roomId %>" method="post" class="form-outlined">
         <label class="sr-only" for="question">O que você quer perguntar?</label>
         <textarea name="question" id="question" placeholder="O que você quer perguntar?"></textarea>
 
@@ -84,11 +84,11 @@
           
           <!-- Actions -->
           <div class="actions">
-            <a href="" class="check --align" type="button" data-id="<%= question.id %> " onclick="return false">
+            <a href="" class="check --align" type="button" data-id="<%= question.id %>" onclick="return false">
               <object data="/images/check-icon.svg" type="image/svg+xml" alt="Marcar como lida"></object>
               Marcar como lida
             </a>
-            <a href="" class="trash --align" type="button" data-id="<%= question.id %> " onclick="return false">
+            <a href="" class="trash --align" type="button" data-id="<%= question.id %>" onclick="return false">
               <object data="/images/trash-icon.svg" type="image/svg+xml" alt="Excluir"></object>
               Excluir
             </a>
@@ -106,14 +106,14 @@
                 <object data="/images/user-icon.svg" type="image/svg+xml" alt="Avatar do usuário"></object>
               </div>
             </span>
-            <p class="question-text"><%= questionChecked.question %> ></p>
+            <p class="question-text"><%= questionChecked.question %></p>
           </div>
           
           <!-- Actions -->
           <div class="actions">
-            <a href="" class="check --align" type="button" data-id="<%= questionChecked.id %> " onclick="return false">
-              <object data="/images/check-icon.svg" type="image/svg+xml" alt="Pergunta lida"></object>
-              Pergunta lida
+            <a href="" class="trash --align" type="button" data-id="<%= questionChecked.id %>" onclick="return false">
+              <object data="/images/trash-icon.svg" type="image/svg+xml" alt="Excluir"></object>
+              Excluir
             </a>
           </div>
         </div>
